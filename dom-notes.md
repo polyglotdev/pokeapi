@@ -54,6 +54,10 @@
    1. Tests should be comprehensive and up-to-date
    2. Model after AWS SDK
    3. Not a panacea, still need to test. _Especially_ negative test cases
+9. Handle Errors the Go way
+   1. Have SDK errors implement `error` interface
+   2. Use type assertions to get more info and extract error codes
+   3. Good packages exist for combining errors
 
 ```go
 type Config struct {
