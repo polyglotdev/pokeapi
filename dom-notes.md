@@ -42,6 +42,7 @@
    1. Allow verbose logging
    2. Allow configurable logging targets
    3. Limited by `stdlib`
+5. Use Go idioms for unsupported types
 
 ```go
 type Config struct {
