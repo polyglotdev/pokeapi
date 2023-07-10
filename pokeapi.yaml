@@ -1,0 +1,66 @@
+openapi: 3.0.0
+info:
+  title: Pokemon API
+  description: This API provides information about Pokemon.
+  version: 1.0.0
+
+paths:
+  /pokemon:
+    get:
+      summary: Get a list of all Pokemon
+      description: Retrieve a list of all Pokemon available in the database.
+      responses:
+        '200':
+          description: A successful response containing a list of Pokemon.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Pokemon'
+
+  /pokemon/{id}:
+    get:
+      summary: Get information about a specific Pokemon
+      description: Retrieve details about a specific Pokemon by its ID.
+      parameters:
+      - name: id
+        in: path
+        description: The ID of the Pokemon to retrieve.
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: A successful response containing details about the Pokemon.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Pokemon'
+        '404':
+          description: The requested Pokemon was not found.
+
+components:
+  schemas:
+    Pokemon:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        type:
+          type: string
+        abilities:
+          type: array
+          items:
+            type: string
+        stats:
+          type: object
+          properties:
+            hp:
+              type: integer
+            attack:
+              type: integer
+            defense:
+              type: integer
