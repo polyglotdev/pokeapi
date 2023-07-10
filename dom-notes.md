@@ -43,6 +43,13 @@
    2. Allow configurable logging targets
    3. Limited by `stdlib`
 5. Use Go idioms for unsupported types
+6. Inherited Types
+7. Do not authenticate in the SDK
+   1. Apps authenticate, SDK accepts accepts OAuth token
+   2. Beware of OAuth pitfalls
+      1. changed endpoints
+      2. app failing on token refresh
+      3. Gem from `oauth/internal.token.go`
 
 ```go
 type Config struct {
