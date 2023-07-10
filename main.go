@@ -22,4 +22,11 @@ func main() {
 		return
 	}
 	fmt.Println("Nature:", nature.Name)
+
+	stat, err := client.GetStat("attack")
+	if err != nil {
+		fmt.Println("Error:", err)
+		return
+	}
+	fmt.Println("Stat:", stat.Name)
 }
