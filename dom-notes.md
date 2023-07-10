@@ -69,7 +69,6 @@ type Config struct {
     Client *http.Client
 }
 ```
-
 ```go
 // You need to check AWS SDK for Go on their logging interface
 // It provides a better logging level! 🛠️
@@ -115,3 +114,14 @@ func (c *Config) TryLog(format string, args ...interface{}) {
 ```output
 Hello, world!
 ```
+
+## TODO'S 📝
+
+- [ ] Create V2 of SDK
+  - [ ] Move the `pokeapi.go` file to `v2` directory
+  - [ ] Create the rest of the SDK in the `v2` directory based on [AWS Go SDK](https://domslinks.com/43qQBp6)
+- [ ] Create a [self-managed SDK](https://domslinks.com/44iVS2W) and then deploy it to a private repo
+- [ ] Clean up the docs and get ready show off the SDK
+
+After you are done, send email with info on how to access the SDK to the team.
+
