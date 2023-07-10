@@ -1,10 +1,12 @@
+
 # Engineering Take Home Project: Develop an SDK for PokeAPI
 
 ## Overview
 
 For this project, envision yourself as a software engineer working with the launch team
-for a new API product: PokeAPI, a comprehensive database containing all the
-information you'll ever need about Pokémon!
+for a new API product: PokeAPI, a comprehensive database containing all
+the information you'll ever need about Pokémon!
+
 Your assignment involves constructing an SDK (Software Development Kit) for this API,
 utilizing any programming language you're comfortable with. The main goal here is to
 make the API more user-friendly and easily accessible to developers. Here is an
@@ -36,3 +38,4 @@ functionality.
 
 Please add a readme file for your SDK users specifying how to install, use and test the
 SDK.
+
