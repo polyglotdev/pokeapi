@@ -50,6 +50,10 @@
       1. changed endpoints
       2. app failing on token refresh
       3. Gem from `oauth/internal.token.go`
+8. Auto Generate Tests
+   1. Tests should be comprehensive and up-to-date
+   2. Model after AWS SDK
+   3. Not a panacea, still need to test. _Especially_ negative test cases
 
 ```go
 type Config struct {
